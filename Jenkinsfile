@@ -15,7 +15,7 @@ pipeline {
 
         stage('Compilation') {
             steps {
-                bat 'mvn compile'
+                bat 'mvn compile -Djacoco.skip=true'
             }
         }
 
